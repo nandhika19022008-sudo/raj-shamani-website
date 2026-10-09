@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Raj Shamani fan community.">
+  <title>Join | The Shamani Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="index.html">RAJ<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a class="active" href="join.html">Join the Community</a>
+    </div>
+    <a class="nav-cta" href="index.html">← Home</a>
+  </nav>
+
+  <main>
+    <section class="join-hero">
+      <div>
+        <p class="eyebrow">THE COMMUNITY</p>
+        <h1>Stay curious.<br><span>Stay connected.</span></h1>
+        <p class="hero-text">
+          Join the fan community and share what you want to learn, build,
+          or talk about next.
+        </p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-intro">
+        <p class="section-label">03 — JOIN</p>
+        <h2>Your next<br><span>conversation</span> starts here.</h2>
+        <p>
+          Fill in the form and tell us what topics you're interested in.
+          Your submission is securely collected through Netlify Forms.
+        </p>
+      </div>
+
+      <!-- Netlify detects this form automatically when the site is deployed on Netlify. -->
+      <form name="community-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="signup-form">
+        <input type="hidden" name="form-name" value="community-signup">
+        <p class="hidden">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
+
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="topic">What do you want to learn about?</label>
+        <select id="topic" name="topic" required>
+          <option value="">Choose a topic</option>
+          <option>Entrepreneurship</option>
+          <option>Business</option>
+          <option>Personal growth</option>
+          <option>Technology</option>
+          <option>Career & money</option>
+          <option>Other</option>
+        </select>
+
+        <label for="message">Tell us something</label>
+        <textarea id="message" name="message" rows="5" placeholder="What would you love to see or discuss?"></textarea>
+
+        <button class="button primary submit-button" type="submit">Join the community →</button>
+        <p class="form-note">By submitting, you agree to receive community updates.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">RAJ<span>.</span></div>
+    <p>Fan-made project • Built for a web development challenge</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
